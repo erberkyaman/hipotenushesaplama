@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class taksimetre {
+    public static void main(String[] args){
+        int baslangic = 10;
+        Scanner yol = new Scanner(System.in);
+        System.out.println("Gidilen KM:");
+        double gidilenyol = yol.nextInt();
+
+        double taksimetre = baslangic + (gidilenyol * 2.20);
+        taksimetre = (taksimetre < 20) ? 20 : taksimetre;
+        System.out.print(taksimetre);
+    }
+}
