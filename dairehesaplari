@@ -1,0 +1,16 @@
+import  java.util.Scanner;
+
+public class dairehesaplari {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Dairenin Yarı Çapını Girin:");
+        double r = input.nextInt();
+
+        double cevre = r*r*3.14;
+        double alan = 2 * 3.14 * r;
+        System.out.println("Daire Çevresi:"+cevre);
+        System.out.println("Dairenin Alanı:"+alan);
+
+    }
+
+}
